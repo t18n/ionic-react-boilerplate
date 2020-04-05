@@ -2,6 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 import * as serviceWorker from './serviceWorker';
+import { setupConfig } from '@ionic/react';
+
+// Override the initial Ionic config for the app
+// https://ionicframework.com/docs/react/config
+setupConfig({
+	rippleEffect: false,
+});
 
 ReactDOM.render(
 	<React.StrictMode>
