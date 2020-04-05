@@ -6,9 +6,9 @@ import { Button } from '../components/Button';
 export const Home = () => (
 	<Layout title="Home">
 		<IonDatetime displayFormat="MM/DD/YYYY" placeholder="Select Date"></IonDatetime>
-		<Button fill="clear">Start</Button>
+		<Button fill="clear">Red button</Button>
 		<Button fill="clear" borderGreen>
-			Start
+			Green Button
 		</Button>
 	</Layout>
 );
