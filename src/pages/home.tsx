@@ -7,6 +7,8 @@ export const Home = () => (
 	<Layout title="Home">
 		<IonDatetime displayFormat="MM/DD/YYYY" placeholder="Select Date"></IonDatetime>
 		<Button fill="clear">Start</Button>
-		<Button borderGreen>Start</Button>
+		<Button fill="clear" borderGreen>
+			Start
+		</Button>
 	</Layout>
 );

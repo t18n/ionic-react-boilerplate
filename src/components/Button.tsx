@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 import { IonButton } from '@ionic/react';
 
 const withGreenBorder = css`
-	border: 1px solid green;
+	border: 3px solid green;
 `;
 
 export const Button = styled(IonButton)<any>`
