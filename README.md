@@ -17,10 +17,9 @@ This boilerplate is created with the solution for above scenario in mind, instal
 ## Getting started
 - Clone the project and cd to project folder
 - Run `yarn install` to install dependencies
-- Run `yarn build` to create build
 - Run `yarn dev:web` to start the web project with hot reload
-- Run `yarn dev:ios` to start iOS app (may need to build project from XCode) with hot reload
-- Run `yarn dev:android` to start iOS app (may need to build project from Android Studio) with hot reload
+- Run `yarn dev:ios` to start iOS app (may need to start project from XCode) with hot reload
+- Run `yarn dev:android` to start iOS app (may need to start project from Android Studio) with hot reload
 
 ## Notes
 - Emotion

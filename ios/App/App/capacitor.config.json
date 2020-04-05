@@ -1,0 +1,12 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "ionic-react-boilerplate",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "public",
+  "cordova": {},
+  "server": {
+    "url": "http://192.168.0.157:8100",
+    "cleartext": true
+  }
+}
