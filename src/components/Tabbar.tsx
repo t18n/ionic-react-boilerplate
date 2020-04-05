@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { IonTabBar, IonIcon, IonLabel, IonTabButton } from '@ionic/react';
 import { home, callOutline, informationCircleOutline } from 'ionicons/icons';
 
-export const Tabbar = () => (
-	<IonTabBar slot="bottom">
+interface ITabbar {
+	slot: 'bottom' | 'top';
+}
+
+export const Tabbar: FC<ITabbar> = ({ slot }) => (
+	<IonTabBar slot={slot}>
 		<IonTabButton tab="home" href="/home">
 			<IonIcon icon={home} />
 			<IonLabel>Home</IonLabel>

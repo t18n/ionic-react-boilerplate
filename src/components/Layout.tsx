@@ -8,12 +8,13 @@ interface ILayout {
 
 export const Layout: FC<ILayout> = ({ title, children }) => (
 	<IonPage>
+		{title}
 		<IonHeader>
 			<IonToolbar>
 				<IonTitle>{title}</IonTitle>
 			</IonToolbar>
 		</IonHeader>
 		<IonContent>{children}</IonContent>
-		<Tabbar />
+		<Tabbar slot="bottom" />
 	</IonPage>
 );
