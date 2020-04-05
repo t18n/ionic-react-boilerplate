@@ -1,10 +1,12 @@
 import React from 'react';
 import { Layout } from '../components/Layout';
-import { IonDatetime, IonButton } from '@ionic/react';
+import { IonDatetime } from '@ionic/react';
+import { Button } from '../components/Button';
 
 export const Home = () => (
 	<Layout title="Home">
 		<IonDatetime displayFormat="MM/DD/YYYY" placeholder="Select Date"></IonDatetime>
-		<IonButton fill="clear">Start</IonButton>
+		<Button fill="clear">Start</Button>
+		<Button borderGreen>Start</Button>
 	</Layout>
 );

@@ -10,6 +10,9 @@
     "bootstrap:clean": "rimraf node_modules && yarn installl && yarn set:yarn"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/css": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
     "@ionic/react": "^5.0.7",
     "@ionic/react-router": "^5.0.7",
     "@testing-library/jest-dom": "^4.2.4",
