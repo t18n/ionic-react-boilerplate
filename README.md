@@ -21,3 +21,19 @@ This boilerplate is created with the solution for above scenario in mind, instal
 - Run `yarn dev:web` to start the web project with hot reload
 - Run `yarn dev:ios` to start iOS app (may need to build project from XCode) with hot reload
 - Run `yarn dev:android` to start iOS app (may need to build project from Android Studio) with hot reload
+
+## Notes
+- Emotion
+  - Emotion offer babel transform plugins via its `macro` exports, which optimizes styles by compressing and hoisting them and creates a better developer experience with source maps and labels. You can use `babel-plugin-emotion` but I deliberately keep the project slim and not changing default CRA config. One way to use it is to add `macro` after library name like `@emotion/styled/macro`.
+  - In VSCode, quite often the `css` API does not respect CSS highlight plugins. Frustralingly enough, it also mess up all syntax highlighting below it. I found the workaround by using
+    ```javascript
+    // Recommended, notice the parenthesis around the backticks
+    const box = css(`
+      background: red
+    `)
+
+    // Not recommended, this will break syntax highlighting
+    const box = css`
+      background: red
+    `;
+    ```
