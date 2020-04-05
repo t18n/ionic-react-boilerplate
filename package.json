@@ -2,7 +2,15 @@
   "name": "ionic-react-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "set:yarn": "ionic config set -g npmClient yarn",
+    "bootstrap": "yarn installl && yarn set:yarn",
+    "bootstrap:clean": "rimraf node_modules && yarn installl && yarn set:yarn"
+  },
   "dependencies": {
+    "@ionic/react": "^5.0.7",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -15,14 +23,9 @@
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "@ionic/cli": "^6.4.1",
+    "rimraf": "^3.0.2"
   },
   "browserslist": {
     "production": [
@@ -35,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "yarn": ">= 1.20",
+    "npm": "Please use Yarn"
   }
 }
